@@ -72,6 +72,44 @@ function LanguageController($scope, $translate) {
 
 function MyController($scope, $http) {
 
+  $scope.imageEmpty = "images/sortEmpty.png";
+  $scope.imageAsc = "images/sortAsc.png";
+  $scope.imageDesc= "images/sortDesc.png";
+  $scope.image0={};
+  $scope.image1={};
+  $scope.image0.url = $scope.imageEmpty;
+  $scope.image1.url = $scope.imageEmpty;
+
+  // Sorting images
+  $scope.toggleSort = function(index) {
+    if (index == 0) {
+      return !($scope.image0.url == $scope.imageEmpty ||  $scope.image0.url == $scope.imageDesc) ;
+    } else {
+      return !($scope.image1.url == $scope.imageEmpty ||  $scope.image1.url == $scope.imageDesc) ;
+    }
+  }
+  $scope.toggleImage = function(index) {
+    if(index == 0) {
+      if( $scope.image0.url == $scope.imageEmpty ) {
+        $scope.image0.url = $scope.imageAsc;
+      } else if ( $scope.image0.url == $scope.imageAsc ) {
+        $scope.image0.url = $scope.imageDesc;
+      } else {
+        $scope.image0.url = $scope.imageAsc;
+      }
+      $scope.image1.url = $scope.imageEmpty;
+    } else {
+      if( $scope.image1.url == $scope.imageEmpty ) {
+        $scope.image1.url = $scope.imageAsc;
+      } else if ( $scope.image1.url == $scope.imageAsc ) {
+        $scope.image1.url = $scope.imageDesc;
+      } else {
+        $scope.image1.url = $scope.imageAsc;
+      }
+      $scope.image0.url = $scope.imageEmpty;
+    }
+   };
+
   // For showing checkboxes
   $scope.showCheckboxes = false;
 

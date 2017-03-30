@@ -82,11 +82,17 @@
                     </tr>
                     <tr> 
                       <th ng-show="isChecked(0)">
-                        <a href="" ng-click="orderByField='producer'; reverseSort = !reverseSort">{{ 'COLUMN1_TITLE' | translate }}</a>
+                        <label>{{ 'COLUMN1_TITLE' | translate }}</label>
+                        <a href="" ng-click="orderByField='producer'; reverseSort = toggleSort(0); toggleImage(0) ">
+                          <img id="image0" ng-src="{{image0.url}}"  width="45px"/>
+                        </a>
                         <input type="text" ng-model="searchC1[1]" placeholder="{{ 'PLACEHOLDER_C1' | translate }}"/>
                       </th>
                       <th ng-show="isChecked(1)">
-                        <a href="" ng-click="orderByField='type'; reverseSort = !reverseSort">{{ 'COLUMN2_TITLE' | translate }}</a>
+                        <label>{{ 'COLUMN2_TITLE' | translate }}</label>
+                        <a href="" ng-click="orderByField='type'; reverseSort = toggleSort(1); toggleImage(1)">
+                          <img id="image1" ng-src="{{image1.url}}"  width="45px"/>
+                        </a>
                         <input type="text" ng-model="searchC2[2]" placeholder="{{ 'PLACEHOLDER_C2' | translate}}" />
                       </th>
                       <th ng-show="isChecked(2)">{{ 'COLUMN3_TITLE' | translate }}
