@@ -1,0 +1,249 @@
+.container, .body {
+  width: 100%;
+}
+
+.container {
+  margin:0 auto;
+  overflow: hidden;
+  position: static;
+}
+
+.logo {
+  float: left;
+  position: static;
+  width: 150px;
+  height: 278px;
+}
+
+.logo_top {
+  border-left: 120px solid #e60000;
+  border-top: 80px inset transparent;
+  position: static;
+}
+
+.logo_rhombus {
+  background-color: #e60000;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 58px;
+  position: static;
+  width: 140px;
+
+}
+
+.logo_bottom {
+  border-top: 140px solid #e60000;
+  border-right: 120px inset transparent;
+  position: static;
+  width: 0px;
+
+}
+
+.logo_img {
+  left: 80px;
+  position: absolute;
+  top: 79px;
+}
+
+.body {
+  margin-left: 150px;
+  position: static;
+}
+
+.body_title {
+  background:#e60000; 
+  border-radius:20px;
+  display: table;
+  height:60px;
+  margin: 20 auto auto auto;
+  text-align: center;
+  width: 75%;
+  -moz-border-radius:20px;
+  -o-border-radius:20px;
+  -webkit-border-radius:20px;
+}
+
+.body_language {
+  background-color: pink;
+}
+
+.body_content {
+  margin: 100px auto auto auto;
+  width: 75%;
+}
+
+.body_footer {
+   display: table;
+   margin: 100px auto auto auto;
+   position: static;
+   text-align: center;
+}
+
+
+.title-font {
+  color: white;
+  font-family:arial, sans-serif;
+  font-size: 200%;
+  font-weigth: bold;
+}
+
+#mycontroller {
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  padding: 12px;
+}
+
+.tableright  {
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: auto;
+}
+
+.tablecenter, .pagination, .checkboxes {
+  margin: 0px auto;
+}
+
+.footer-font {
+  color: black;
+  font-family:arial, sans-serif;
+  font-size: 80%;
+  font-style: italic;
+}
+
+
+.path {
+   float: left;
+   width: 100px;
+   height: 25px;
+}
+
+.perpage {
+   margin-left: 100px;
+   text-align: right;
+   height: 25px;
+   position: static;
+}
+
+.separator {
+   height: 25px;
+}
+
+.perpage input {
+   width: 50px;
+}
+
+.checkboxes {
+   background-color: white;
+   overflow: auto;
+   width: 150px;
+   height: 76px;
+   position: absolute;
+   z-index: 90;
+   border: 1px solid black;
+}
+
+.checkboxitem {
+  background-color: white;
+  font-family: arial, sans-serif;
+  font-size: 11px;
+  font-style: none;
+  text-align: left;
+  text-decoration: none;
+}
+
+.checkboxitem input {
+  width: 20px;
+}
+
+
+div {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -moz-outline-style: none;
+}
+
+span {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+th, td  {
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table thead tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+th {
+  text-align: center;
+  background-color: lightgrey;
+}
+
+th input {
+  width: 60%;
+}
+
+#search {
+  width: 250px;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+  font-family: arial, sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+.search {
+  float: left;
+}
+
+.display {
+  float: right;
+}
+
+#mainselection select {
+   border: 0;
+   color: black;
+   background: transparent;
+   font-size: 12px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 98px;
+   *width: 70px;
+   *background: lightgrey;
+   -webkit-appearance: none;
+}
+
+#mainselection {
+   overflow:hidden;
+   width:70px;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 9px 9px 9px 9px;
+   border-radius: 9px 9px 9px 9px;
+   box-shadow: 1px 1px 11px #330033;
+   background: lightgrey url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 39px center;
+   float: right;
+   margin-top: 18px;
+   margin-right: 12px;
+}
+

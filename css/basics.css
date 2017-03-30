@@ -1,0 +1,12 @@
+/* Step 2 : Basis */
+body {
+    font-size: 100% ;
+}
+
+/* Step 3 : Miscellaneous */
+.clear { 
+    clear: both;
+}
+.wrap{ margin:0 auto; position:relative; width:980px;}.cl,.cr,.cb{ display:block !important; float:none !important; height:0 !important;}.cl{ clear:left;}.cr{ clear:right;}.cb{ clear:both;}
+
+

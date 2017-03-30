@@ -1,0 +1,32 @@
+/* ---------------------------
+    Theme Name: Web Tutoriel
+    Theme URI: http://www.nicolas.foata.com
+    e-mail : nicolas.foata@gmail.com
+    Description: Tutoriel web
+    Author: Nicolas FOATA
+------------------------------
+Mes couleurs :
+    1879DA : toto
+    2B70B5 : tata pour barre de titre
+
+Pas de tabulation (2 blancs, JS 4 blancs)
+http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#ID_and_class_naming
+------------------------------ */
+
+/* Step 1 : charset used */
+@charset "UTF-8";
+
+/* Step 2 : import */
+@import url('reset.css') all ;
+@import 'basis.css' all ;
+@import 'phone.css' screen and (max-width:320px) ;
+@import 'pad.css' screen and (min-width:321px) and (max-width:480px) ;
+@import 'computer.css' screen  and (min-width:481px) ;
+
+/* Step 3 : come back on media request */
+@media screen  and (min-width:481px) {
+	h1 {
+		font-size:210%;
+	}
+}
+
