@@ -84,21 +84,25 @@
                       <th ng-show="isChecked(0)">
                         <label>{{ 'COLUMN1_TITLE' | translate }}</label>
                         <a href="" ng-click="orderByField='producer'; reverseSort = toggleSort(0); toggleImage(0) ">
-                          <img id="image0" ng-src="{{image0.url}}"  width="45px"/>
+                          <img id="image0" ng-src="{{image0.url}}"  width="30px"/>
                         </a>
+                        <br/>
                         <input type="text" ng-model="searchC1[1]" placeholder="{{ 'PLACEHOLDER_C1' | translate }}"/>
                       </th>
                       <th ng-show="isChecked(1)">
                         <label>{{ 'COLUMN2_TITLE' | translate }}</label>
                         <a href="" ng-click="orderByField='type'; reverseSort = toggleSort(1); toggleImage(1)">
-                          <img id="image1" ng-src="{{image1.url}}"  width="45px"/>
+                          <img id="image1" ng-src="{{image1.url}}"  width="30px"/>
                         </a>
+                        <br/>
                         <input type="text" ng-model="searchC2[2]" placeholder="{{ 'PLACEHOLDER_C2' | translate}}" />
                       </th>
                       <th ng-show="isChecked(2)">{{ 'COLUMN3_TITLE' | translate }}
+                        <br/>
                          <input type="text" ng-model="searchC3[3]" placeholder="{{ 'PLACEHOLDER_C3' | translate}}"/>
                       </th>
                       <th ng-show="isChecked(3)">{{ 'COLUMN4_TITLE' | translate }}
+                        <br/>
                          <input type="text" ng-model="searchC4[4]" placeholder="{{ 'PLACEHOLDER_C4' | translate}}"/>
                       </th> 
                     </tr>
@@ -140,7 +144,6 @@
 
         <div class="body_footer"><span class="footer-font">{{ 'RIGHTS' | translate }}</span></div> 
       </div> <!-- end of the dic class body -->
-
 
     <!-- 
         tout le contenu de la page 
