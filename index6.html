@@ -70,7 +70,12 @@
                         <input id="search" ng-model="q" id="search" class="form-control" placeholder="{{ 'PLACEHOLDER_GLOBAL_SEARCH' | translate }}">
                        </div>
                       <div class="display">
+                        <a href="" ng-click="showCheckboxes = !showCheckboxes">
+                          <img src="images/table.png" width="20px" />
+                        </a>
+<!--
                       <button id="myButton" ng-click="showCheckboxes = !showCheckboxes">{{ 'COLUMN_DISPLAY' | translate }}</button>
+-->
                         <div class="checkboxes" ng-show="showCheckboxes">
                           <div class="checkboxitem" ng-show="showCheckboxes" ng-repeat="item in checkboxes">
                             <input type="checkbox" ng-model="item.checked" ng-change="checkedOrNot(item.id, item.checked)" />
@@ -84,7 +89,7 @@
                       <th ng-show="isChecked(0)">
                         <label>{{ 'COLUMN1_TITLE' | translate }}</label>
                         <a href="" ng-click="orderByField='producer'; reverseSort = toggleSort(0); toggleImage(0) ">
-                          <img id="image0" ng-src="{{image0.url}}"  width="30px"/>
+                          <img id="image0" ng-src="{{image0.url}}"  width="20px"/>
                         </a>
                         <br/>
                         <input type="text" ng-model="searchC1[1]" placeholder="{{ 'PLACEHOLDER_C1' | translate }}"/>
@@ -92,7 +97,7 @@
                       <th ng-show="isChecked(1)">
                         <label>{{ 'COLUMN2_TITLE' | translate }}</label>
                         <a href="" ng-click="orderByField='type'; reverseSort = toggleSort(1); toggleImage(1)">
-                          <img id="image1" ng-src="{{image1.url}}"  width="30px"/>
+                          <img id="image1" ng-src="{{image1.url}}"  width="20px"/>
                         </a>
                         <br/>
                         <input type="text" ng-model="searchC2[2]" placeholder="{{ 'PLACEHOLDER_C2' | translate}}" />
